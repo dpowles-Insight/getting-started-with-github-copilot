@@ -93,16 +93,79 @@ section h3 {
 }
 
 .participants ul {
-  list-style: disc;
-  margin-left: 22px;
-  padding-left: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   color: #303b56;
 }
 
-.participants li {
+.participant-item,
+.participant-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 6px;
   line-height: 1.5;
   font-size: 1.05rem;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-participant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(26, 35, 126, 0.3);
+  border-radius: 999px;
+  background: #fff;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-participant:hover {
+  background-color: #eef3ff;
+  transform: scale(1.05);
+}
+
+.undo-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.undo-countdown {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.undo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(26, 35, 126, 0.4);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.undo-button:hover {
+  background: #eef3ff;
 }
 
 .form-group {
