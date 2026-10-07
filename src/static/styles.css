@@ -59,19 +59,113 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px 18px;
+  border: 1px solid #dfe6f1;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 4px 10px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+  font-size: 1.2rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 18px;
+  padding: 16px 18px 12px;
+  border: 1px solid rgba(74, 99, 226, 0.35);
+  border-radius: 10px;
+  background-color: rgba(176, 214, 255, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-size: 1.05rem;
+}
+
+.participants ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #303b56;
+}
+
+.participant-item,
+.participant-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-participant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(26, 35, 126, 0.3);
+  border-radius: 999px;
+  background: #fff;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-participant:hover {
+  background-color: #eef3ff;
+  transform: scale(1.05);
+}
+
+.undo-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.undo-countdown {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.undo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(26, 35, 126, 0.4);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.undo-button:hover {
+  background: #eef3ff;
 }
 
 .form-group {
